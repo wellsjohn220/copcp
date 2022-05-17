@@ -195,3 +195,14 @@ footer .glyphicon {
   .glyphicon-user:before {    
     color: blue;
 }
+
+footer.container-fluid {
+  background-color: #877a45;
+  color:white;
+  text-align: center;
+}
+
+footer.container-fluid a {
+  color: white;
+  /* text-decoration: none; */
+}
