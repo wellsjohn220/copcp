@@ -155,7 +155,8 @@ footer .glyphicon {
   border: 3px solid #ddd;
   border-radius: 15px;
   padding: 25px;  
-  
+  width:85%;
+  margin: 20px 1px;
 }
 
 #myimg:hover {
