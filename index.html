@@ -96,7 +96,7 @@
          <a href="/copcp/download/XXXXX_COPCP Assessment Task 2.docx" download>Download Assessment Two</a> ||
          <!--  <a href="download/XXXXX_COPCP Assessment Task 2.docx" download>Download Assessment Two</a>        </li>   -->   
          <li style="display: inline">
-          <a href="https://docs.google.com/spreadsheets/d/18GMCsbwWRpe8zONp7gttIe597fj_C70twj6fek1TgGM/edit?usp=sharing" target="_blank">
+          <a href="https://docs.google.com/spreadsheets/d/1kz-AoQsFzVxrQVtr0w0azNAijxchXWIgXx9IXDkQ-js/edit?usp=sharing" target="_blank">
             Check Contact or Subscribe</a>  ||
         </li>        
         
@@ -716,34 +716,30 @@
       <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
+    <div class="col-sm-7 slideanim">      
       <form name="contact-to-google-sheet" >
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="Name" placeholder="Name" type="text" required>
+        <div class="row">
+          <div class="col-sm-4 form-group">
+            <input class="form-control" id="name" name="Name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-8 form-group">
+            <input class="form-control" id="email" name="Email" placeholder="Email" type="email" required>
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="Email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comment" name="Comment" placeholder="Comment" rows="5"></textarea><br>
-     
-      <div class="row">
-        <div class="col-sm-6 form-group">
+        <textarea class="form-control" id="comments" name="Comment" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-6 form-group">
           <select name="State">
-            <option>NSW</option>
-            <option>VIC</option>
-            <option>WA</option>
-            <option>QLD</option>
-            <option>NT</option>
-            <option>CT</option>
+            <option>NSW</option>            <option>VIC</option>            <option>WA</option>
+            <option>QLD</option>            <option>NT</option>            <option>CT</option>
           </select>  
+          </div>
+          <div class="col-sm-6 form-group">
+            <button class="btn btn-default pull-right" type="submit">
+              <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;Contact info Send by 12345</button>
+          </div>
         </div>
-        <div class="col-sm-6 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send Contact Details</button>
-        </div>
-      </div>
-      </form>    
+        </form>   
     </div>
   </div>
 </div>
@@ -762,40 +758,6 @@
 </body>
 <!-- Load external JavaScript -->
 <script src="js/scripts.js"></script>
-<!-- <script src="js/register.js"></script> -->
-<script> 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxbwH6kCXKuDb-0kyGG5H8DPeK79duCnUcM-7XK5IPQyZUW6AvNUW-H1lSG_e7Yqls/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")  
+<script src="js/register.js"></script>
 
-  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbzkjhOgs9MuvqinvFjqajBNMrih-K8WwxH-ll1t45W8Oj_1H01g9dorusZbogX5s4k/exec'  
-  
-  const form2 = document.forms['contact-to-google-sheet']
-  const msg2 = document.getElementById("msg2")  
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          msg.innerHTML = "Thank you For Subscribing My Site by 12345 John"
-          setTimeout(function(){
-              msg.innerHTML = "This site powered by 12345 John in 2023"
-          }, 5000)
-          form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })  
-  form2.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL2, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          msg2.innerHTML = "Thank you send contact details"
-          setTimeout(function(){
-              msg2.innerHTML = "CONTACT"
-          }, 5000)
-          form2.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })  
-</script>
 </html>
