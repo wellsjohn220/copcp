@@ -43,6 +43,10 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    #load-screen {
+        display: grid;
+        justify-content: center;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
