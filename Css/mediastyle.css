@@ -30,7 +30,7 @@
     .col-xs-6 {
       width: 100%;
     }
-    img#hideme {
+    img #hideme {
       display: none;
     }
     #loading {
