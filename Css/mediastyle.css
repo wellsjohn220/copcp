@@ -34,8 +34,6 @@
       display: none;
     }
     #loading {
-      width: 80%;
-      height: 80%;
       margin: 0 auto;
       background: url(../images/loader.gif);
       background-position: center center;
@@ -44,9 +42,9 @@
       background-position: center;
     }
     #load-screen {
-        display: grid;
-        justify-content: center;
-    }
+      display: grid;
+      justify-content: center;
+  }
   }
   @media screen and (max-width: 480px) {
     .logo {
