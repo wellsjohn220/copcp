@@ -33,4 +33,10 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+function generateDate(){
+  let today = new Date().toLocaleDateString('en-GB')
+  console.log(today);
+  document.getElementById("reg").value = today;  
+  return true;
+}
 // </script>
