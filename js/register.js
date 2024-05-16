@@ -33,16 +33,18 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
-function generateDate(){
-  let today = new Date().toLocaleDateString('en-GB')
-  console.log(today);
-  document.getElementById("reg").value = today;  
-  return true;
-}
-// </script>
-function generateEDate(){
-  let today = new Date().toLocaleDateString('en-GB')
-  console.log('E Regeste Date: ' + today);
-  document.getElementById("Ereg").value = today;  
-  return true;
-}
+ function generateDate(){
+    let today = new Date().toLocaleDateString('en-AU')
+    console.log('Date has been loaded ' + today);
+    document.getElementById("reg").value = today;  
+    return true;
+  }
+  function generateEDate(){
+    let today = new Date().toLocaleDateString('en-AU')
+    let subtime = new Date().toLocaleTimeString('en-AU')
+    console.log('E Regeste Time: ' + subtime);
+    console.log('E Regeste Date: ' + today);
+    document.getElementById("Ereg").value = today;  
+    document.getElementById("Eregtime").value = subtime;  
+    return true;
+  }
