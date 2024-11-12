@@ -1,9 +1,9 @@
 {/* <script>  */}
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby69BFjuFqbLbxt7GbHsYEeVJ87daMxiSQX4Vu_kkHn2iMaAinkNO_0kdEUKz4J4qL-/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxGG5uTuF9tYf9sDKHUk-d3Mky9HJxzTmHMkv3T567hxyly4hWvl2slPvkXFcqAMiyRUg/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")  
 
-  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbxGG5uTuF9tYf9sDKHUk-d3Mky9HJxzTmHMkv3T567hxyly4hWvl2slPvkXFcqAMiyRUg/exec'  
+  const scriptURL2 = ''  
   
   const form2 = document.forms['contact-to-google-sheet']
   const msg2 = document.getElementById("msg2")  
