@@ -3,7 +3,7 @@
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")  
 
-  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbxRFU7gJwElZci_iLIyoOL_8MXFN_MLaOcBGNPOTsGVg9b9V5bG-VsT8KpxSB05eg/exec'  
+  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbzn71KMT4A6_zSNshpPlUHLX4KDalBFqMFC_yRTshCxSPU2CJvKj0ySKq1VelmARUnXnQ/exec'  
   
   const form2 = document.forms['contact-to-google-sheet']
   const msg2 = document.getElementById("msg2")  
