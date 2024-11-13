@@ -1,5 +1,5 @@
 {/* <script>  */}
-  const scriptURL = ''
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbygn1RMQDya-nAv4PoiYBxrCqS-3kKn_5yqtt_XV-Q0z8f7flDTOCUxEQrzG6i-VxO5/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")  
 
@@ -33,13 +33,7 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
- function generateDate(){
-    let today = new Date().toLocaleDateString('en-AU')
-    console.log('Date has been loaded ' + today);
-    document.getElementById("reg").value = today;  
-    return true;
-  }
-  function generateEDate(){
+ function generateEDate(){
     let today = new Date().toLocaleDateString('en-AU')
     let subtime = new Date().toLocaleTimeString('en-AU')
     console.log('E Regeste Time: ' + subtime);
