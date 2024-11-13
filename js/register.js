@@ -4,7 +4,7 @@
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")  
 
-  const scriptURL2 = ''  
+  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyUo7jGEoPDy0cBYwrNnHPAPISHfxF3A6dnqTu23zw8oTfwIoyyoewLrTKTRHWJjpLL/exec'  
   
   const form2 = document.forms['contact-to-google-sheet']
   const msg2 = document.getElementById("msg2")  
