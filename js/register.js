@@ -34,9 +34,12 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
- function generateEDate(){
+
     let today = new Date().toLocaleDateString('en-AU')
     let subtime = new Date().toLocaleTimeString('en-AU')
+
+    function generateEDate(){
+
     console.log('E Regeste Time: ' + subtime);
     console.log('E Regeste Date: ' + today);
     document.getElementById("Ereg").value = today;  
@@ -44,8 +47,7 @@
     return true;
   }
  function generateDate(){
-    let today = new Date().toLocaleDateString('en-AU')
-    let subtime = new Date().toLocaleTimeString('en-AU')
+   
     console.log('C Regeste Time: ' + subtime);
     console.log('C Regeste Date: ' + today);
     document.getElementById("Creg").value = today;  
