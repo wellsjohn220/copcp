@@ -43,3 +43,12 @@
     document.getElementById("Eregtime").value = subtime;  
     return true;
   }
+ function generateDate(){
+    let today = new Date().toLocaleDateString('en-AU')
+    let subtime = new Date().toLocaleTimeString('en-AU')
+    console.log('E Regeste Time: ' + subtime);
+    console.log('E Regeste Date: ' + today);
+    document.getElementById("Ereg").value = today;  
+    document.getElementById("Eregtime").value = subtime;  
+    return true;
+  }
