@@ -1,11 +1,9 @@
 {/* <script>  */}
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbygn1RMQDya-nAv4PoiYBxrCqS-3kKn_5yqtt_XV-Q0z8f7flDTOCUxEQrzG6i-VxO5/exec'
-               
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbygn1RMQDya-nAv4PoiYBxrCqS-3kKn_5yqtt_XV-Q0z8f7flDTOCUxEQrzG6i-VxO5/exec'               
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")  
 
-  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyUo7jGEoPDy0cBYwrNnHPAPISHfxF3A6dnqTu23zw8oTfwIoyyoewLrTKTRHWJjpLL/exec'  
-  
+  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyUo7jGEoPDy0cBYwrNnHPAPISHfxF3A6dnqTu23zw8oTfwIoyyoewLrTKTRHWJjpLL/exec'    
   const form2 = document.forms['contact-to-google-sheet']
   const msg2 = document.getElementById("msg2")  
 
@@ -37,17 +35,14 @@
 
     let today = new Date().toLocaleDateString('en-AU')
     let subtime = new Date().toLocaleTimeString('en-AU')
-
     function generateEDate(){
-
-    console.log('E Regeste Time: ' + subtime);
-    console.log('E Regeste Date: ' + today);
-    document.getElementById("Ereg").value = today;  
-    document.getElementById("Eregtime").value = subtime;  
+      console.log('E Regeste Time: ' + subtime);
+      console.log('E Regeste Date: ' + today);
+      document.getElementById("Ereg").value = today;  
+      document.getElementById("Eregtime").value = subtime;  
     return true;
   }
- function generateDate(){
-   
+ function generateDate(){   
     console.log('C Regeste Time: ' + subtime);
     console.log('C Regeste Date: ' + today);
     document.getElementById("Creg").value = today;  
