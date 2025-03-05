@@ -13,7 +13,7 @@
       .then(response => {
           msg.innerHTML = "Thank you For Subscribing My Site by 12345 John"
           setTimeout(function(){
-              msg.innerHTML = "This site powered by 12345 John in 2024"
+              msg.innerHTML = "This site powered by 12345 John in 2025"
           }, 5000)
           form.reset()
       })
