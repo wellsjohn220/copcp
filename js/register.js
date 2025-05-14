@@ -34,7 +34,7 @@
   })
 
     let today = new Date().toLocaleDateString('en-AU')
-    let subtime = new Date().toLocaleTimeString('en-AU')
+    let subtime = new Date().toLocaleTimeString()
     function generateEDate(){
       console.log('E Regeste Time: ' + subtime);
       console.log('E Regeste Date: ' + today);
